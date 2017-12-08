@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>New Contacts Widget</title>
+	<link rel="stylesheet" href="includes/css/style.css">
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="new_contacts_widget">
+		<div class="row header">
+			<div class="col-xs-12">
+				<h2>Contacts</h2>
+			</div>
+		</div>
+		<div class="row" id="contacts">
+			<div class="col-xs-12 contact_list_item">
+				Loading Contacts...
+			</div>
+		</div>
+		<div class="row footer">
+			<div class="col-xs-12">
+				<select name="contact_display" id="contact_display">
+					<option value="email">Email address</option>
+					<option value="phone">Phone number</option>
+				</select>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<script src="includes/javascript/script.js"></script>
+</body>
+</html>

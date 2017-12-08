@@ -1,0 +1,156 @@
+.row{
+	display: block;
+}
+.row .col-xs-12,
+.row .col-xs-7,
+.row .col-xs-5,
+.row .col-xs-3,
+.row .col-xs-2{
+	display: inline-block;
+}
+.row .col-xs-12{
+	width: 100%
+}
+.row .col-xs-7{
+	width: 58.3333%
+}
+.row .col-xs-5{
+	width: 41.6666%
+}
+.row .col-xs-3{
+	width: 25%
+}
+.row .col-xs-2{
+	width: 16.6666%
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+.new_contacts_widget{
+	font-family: Arial, serif;
+	font-weight: bold;
+	background-color: #202020;
+	color: #ffffff;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	border-radius: 14px;
+	overflow: hidden;
+}
+
+.new_contacts_widget a,
+.new_contacts_widget a:visited,
+.new_contacts_widget a:active,
+.new_contacts_widget a:hover{
+	color: #18D2E9;
+}
+
+/********* HEADER ************/
+.new_contacts_widget .header{
+	background: #202020; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#4D4D4D, #202020); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#4D4D4D, #202020); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#4D4D4D, #202020); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#4D4D4D, #202020); /* Standard syntax */
+	border-radius: 14px 14px 0 0;
+	border-bottom: 1px solid #131313;
+	letter-spacing: 1px;
+}
+
+.new_contacts_widget .header h2{
+	padding: 15px 16px;
+	font-size: 15px;
+	margin: 0;
+}
+/************ END OF HEADER **********/
+
+
+
+
+/********** BODY CONTENT ***********/
+.new_contacts_widget #contacts{
+	position: relative;
+}
+.new_contacts_widget #contacts .inactive {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+.new_contacts_widget .contact_list_item{
+	padding: 12px 16px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.new_contacts_widget .contact_list_item:nth-of-type(odd){
+	background-color: #212121;
+}
+.new_contacts_widget .contact_list_item:nth-of-type(even){
+	background-color: #1A1A1A;
+}
+.new_contacts_widget .contact_list_item:not(:last-of-type){
+	border-bottom: 1px solid #131313;
+}
+.new_contacts_widget .contact_list_item div:first-of-type{
+	/*border-right: 1px solid #1E1E1E;*/
+}
+.new_contacts_widget .contact_list_item span.status_dot {
+	background-color: #00FD1B;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 15px;
+}
+.new_contacts_widget .contact_list_item span.status_dot.busy{
+	background-color: #C4C217;
+}
+.new_contacts_widget .contact_list_item span.status_dot.unavailable{
+	background-color: #FA0002;
+}
+
+.new_contacts_widget .contact_list_item:not(.active) div:nth-of-type(2){
+	color: #4E4E4E;
+}
+
+.new_contacts_widget .contact_list_item .glance_details{
+	padding-left: 20px;
+}
+.new_contacts_widget .contact_list_item .additional_details{
+	display: none;
+	position: absolute;
+	background-color: #484848;
+	padding: 10px 20px;
+}
+.new_contacts_widget .contact_list_item.active{
+	position: relative;
+	z-index: 2;
+	background-color: #484848;
+	color: #ffffff;
+}
+.new_contacts_widget .contact_list_item.active .additional_details{
+	display: block;
+}
+
+/********* END OF BODY CONTENT **********/
+
+
+
+
+/******** FOOTER ************/
+.new_contacts_widget .footer{
+	padding: 15px 16px;
+	border-top: 1px solid #131313;
+}
+
+.new_contacts_widget .footer select{
+	float: right;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+/********* END OF FOOTER ***********/
